@@ -219,6 +219,48 @@ h1 {
   margin-bottom: 0.5em;
 }
 
+.keyboard {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.keyboard-row {
+  display: flex;
+  align-items: center;
+  gap: 5px 5px;
+}
+
+.key {
+  height: 30px;
+  width: 22px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  background: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.key.incorrect {
+  background-color: #3c3c3c;
+  border-color: #3c3c3c;
+  color: #fff;
+}
+
+.key.correct {
+  background-color: #005a36;
+  border-color: #005a36;
+  color: #fff;
+}
+
+.key.misplaced {
+  background-color: #a7922a;
+  border-color: #a7922a;
+  color: #fff;
+}
+
 /*
   Keyframe animations
 */

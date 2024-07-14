@@ -1,0 +1,41 @@
+.wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: start;
+  gap: 4px;
+  margin-top: 20px;
+}
+
+.label {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0071f3;
+}
+
+.label:focus {
+  outline: 2px solid;
+  outline-offset: 0;
+  outline-color: #0071f3;
+  box-shadow: 0 0 5px 4px #0071f32c;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.5rem;
+  border: 1px solid #0071f3;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.input:focus {
+  outline: 2px solid;
+  outline-offset: 0;
+  outline-color: #0071f3;
+  box-shadow: 0 0 5px 4px #0071f32c;
+}
+
+.input:focus + label {
+  color: #0071f3;
+}

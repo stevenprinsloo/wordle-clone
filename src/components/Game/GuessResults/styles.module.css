@@ -1,0 +1,57 @@
+.guess-results {
+  display: grid;
+  border-radius: 5px;
+}
+
+.guess {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  place-content: center;
+  place-items: center;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.cell {
+  aspect-ratio: 1 / 1;
+  border: 2px solid #ccc;
+  width: 100%;
+  height: 100%;
+  font-size: 24px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.cell.incorrect {
+  background-color: #3c3c3c;
+  border-color: #3c3c3c;
+}
+
+.cell.correct {
+  background-color: #005a36;
+  border-color: #005a36;
+}
+
+.cell.misplaced {
+  background-color: #a7922a;
+  border-color: #a7922a;
+}
+
+.guess-results .guess:first-child .cell:first-child {
+  border-top-left-radius: 5px;
+}
+
+.guess-results .guess:first-child .cell:last-child {
+  border-top-right-radius: 5px;
+}
+
+.guess-results .guess:last-child .cell:first-child {
+  border-bottom-left-radius: 5px;
+}
+
+.guess-results .guess:last-child .cell:last-child {
+  border-bottom-right-radius: 5px;
+}
